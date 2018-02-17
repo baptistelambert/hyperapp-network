@@ -5,6 +5,7 @@
     "Notifies your app when the network connection goes online or offline.",
   "main": "lib/index.js",
   "author": "Baptiste Lambert",
+  "repository": "https://github.com/baptistelambert/hyperapp-network",
   "license": "MIT",
   "private": false,
   "scripts": {
