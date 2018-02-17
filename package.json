@@ -1,0 +1,23 @@
+{
+  "name": "hyperapp-network",
+  "version": "1.0.0",
+  "description":
+    "Notifies your app when the network connection goes online or offline.",
+  "main": "lib/index.js",
+  "author": "Baptiste Lambert",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rollup -i src/index.js -o lib/index.js -f umd -n network",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {
+    "hyperapp": "^1.1.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "hyperapp": "^1.1.2",
+    "rollup": "^0.56.1"
+  },
+  "files": ["src", "lib"]
+}
