@@ -1,1 +1,1 @@
-import { h } from 'hyperapp';
+export { default as Network } from './Network';
