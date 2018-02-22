@@ -1,6 +1,6 @@
 {
   "name": "hyperapp-network",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description":
     "Notifies your app when the network connection goes online or offline.",
   "main": "lib/index.js",

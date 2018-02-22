@@ -1,6 +1,6 @@
 import { h } from 'hyperapp';
 
-const Network = ({ render, component, onChange, online }, children) => {
+const Network = ({ render, onChange, online }, children) => {
   const updateOnline = () => {
     onChange(window.navigator.onLine);
   };
@@ -19,11 +19,9 @@ const Network = ({ render, component, onChange, online }, children) => {
     'div',
     {
       oncreate: addNetworkEventListeners,
-      onremove: removeNetworkEventListeners
+      ondestroy: removeNetworkEventListeners
     },
-    component
-      ? h(component, { online })
-      : render ? render({ online }) : children
+    render ? render({ online }) : children
   );
 };
 
